@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cat_dog"
+authors = [
+  { name="Jonathan Edge", email="j.edge@zoho.com" },
+]
+description = "Simple demonstration that with transfer learning we can distinguish between cats and dogs using few training examples."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies= ["tqdm",
+    "torch",
+    "torchvision",
+    "torchmetrics",
+    "tensorboard",
+    "pytest",
+    "pandas",
+    "transfer-learning-vision-classifiers",
+    "cat_dog_classifiers @ git+https://github.com/jme45/cat_dog_classifiers@main"
+]
+dynamic = ["version", ]
+
+[project.urls]
+Homepage = "https://github.com/jme45/aircraft_classification"
+Issues = "https://github.com/jme45/aircraft_classification/issues"
+
+[tool]
+
+[tool.hatch.metadata]
+# To allow dependencies which are only on github, but not pypi.
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/cat_dog/__about__.py"
