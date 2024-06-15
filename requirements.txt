@@ -1,0 +1,10 @@
+torch
+torchvision
+torchmetrics
+pytest
+numpy
+pandas
+pyarrow  # to keep pandas happy
+ml_utils_jme45
+transfer-learning-vision-classifiers
+cat_dog_classifiers @ git+https://github.com/jme45/cat_dog_classifiers@main
