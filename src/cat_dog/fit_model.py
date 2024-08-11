@@ -13,7 +13,7 @@ import torchvision
 
 from cat_dog_classifiers import classifiers
 
-import parameters
+from cat_dog import parameters
 
 
 def fit_model(
