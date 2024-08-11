@@ -15,13 +15,17 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies= ["tqdm",
+dependencies= [
+    "tqdm",
     "torch",
     "torchvision",
     "torchmetrics",
     "tensorboard",
     "pytest",
+    "numpy",
     "pandas",
+    "pyarrow",
+    "ml_utils_jme45",
     "transfer-learning-vision-classifiers",
     "cat_dog_classifiers @ git+https://github.com/jme45/cat_dog_classifiers@main"
 ]
